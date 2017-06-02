@@ -1,0 +1,15 @@
+body{background: url(../img/back.jpg) center center fixed;
+	background-size:cover;
+}
+
+img{
+    margin:10px;
+    width:400px;
+    height: 300px;
+}
+div{
+	margin-left: 40%;
+}
+
+
+

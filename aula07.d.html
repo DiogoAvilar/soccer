@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/aula07.css">
+<link rel="stylesheet" type="text/css" href="css/hover.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css ">
+
+
+
+	<title>One Page</title>
+</head>
+<body>
+     <!-- Craindo menu no topo -->
+    <header>
+	     <nav>
+	     	<ul>  
+	     		<li><a href="#banner"> Home </a></li>
+	     		<li><a href="#texto"> Sobre </a></li>
+	     		<li><a href="#galeria"> Galeria </a></li>
+	     		<li><a href="#contato"> Contato </a></li>
+	     		
+	     	</ul>
+	     </nav>
+</header>
+<i id="topo"></i>
+<!-- Craindo o Banner -->
+<section class="banner">
+	<h3 id="banner">BANNER</h3>  
+</section>
+<!--Criando Conteudo -->
+<article class="texto">
+<h4 id="texto">texto</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</article>
+<!-- Carregando imagens -->
+<article>
+<h4 id="galeria">Galeria</h4>
+	<img src="img/REUS.jpg" alt="imagem" class="hvr-buzz">
+	<img src="img/Martin Garrix.jpg" alt="imagem" class="hvr-wobble-horizontal">
+	<img src="img/HAZARD.jpg" alt="imagem" class="hvr-wobble-horizontal">
+	<img src="img/HAZARD.jpg" alt="imagem" class="hvr-pulse">
+</article>
+<!-- Criando conteudo --> 
+<section class="contato">
+	<h4 id="contato">Contato</h4>
+    <i class="fa fa-plane fa-5x hvr-pulse" aria-hidden="true"></i>
+    <i class="fa fa-bomb  fa-5x hvr-pulse" aria-hidden="true"></i>
+    <i class="fa fa-hospital-o fa-5x hvr-pulse" aria-hidden="true"></i>
+    <i class="fa fa-car fa-5x hvr-pulse" aria-hidden="true"></i>
+    <i class="fa fa-coffee fa-5x hvr-pulse" aria-hidden="true"></i>
+    <i class="fa fa-music fa-5x hvr-pulse" aria-hidden="true"></i>
+    <i class="fa fa-laptop fa-5x hvr-pulse" aria-hidden="true"></i>
+    <i class="fa fa-rocket fa-5x hvr-pulse" aria-hidden="true"></i>
+    <i class="fa fa-futbol-o fa-5x hvr-wobble-horizontal" aria-hidden="true"></i>
+    <i class="fa fa-hand-peace-o fa-5x hvr-wobble-horizontal" aria-hidden="true"></i>
+    <i class="fa fa-motorcycle fa-5x hvr-wobble-horizontal" aria-hidden="true"></i>
+    <i class="fa fa-subway fa-5x hvr-wobble-horizontal" aria-hidden="true"></i>
+    <i class="fa fa-magic fa-5x hvr-wobble-horizontal" aria-hidden="true"></i>
+    <i class="fa fa-battery-full fa-5x hvr-wobble-horizontal" aria-hidden="true"></i>
+    <i class="fa fa-phone fa-5x hvr-wobble-horizontal" aria-hidden="true"></i>
+
+
+
+</section>
+<!-- Criando rodape -->
+<footer>
+	<em>
+		©Todos os Direitos Reservados | 2017
+	</em>
+	<a href="http://www.youtube.com" target="_blank">
+	<img src="img/001-youtube.png" class="social"> 
+	</a>
+
+	<a href="http://www.facebook.com" target="_blank">
+	<img src="img/002-facebook.png" class="social">
+	</a>
+
+	<a href="http://www.instagram.com" target="_blank">
+	<img src="img/003-instagram.png" class="social">
+	</a>	
+	<a href="#topo">
+		<i class="fa fa-arrow-circle-up fa-4x" aria-hidden="true"></i>
+	</a>
+	
+</footer>
+<video src="media/video01.mp4" autoplay loop muted></video>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(window).scroll(function(){
+
+			$("#banner").css("opacity", 1 - $(window).scrollTop()/230);
+
+		});//fecha scroll
+
+	});//fecha jquery
+
+
+
+</script>
+</body>
+</html>
